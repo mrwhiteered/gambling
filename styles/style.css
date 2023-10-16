@@ -147,7 +147,7 @@ text-transform: uppercase;
     height: 595px;
     align-self: stretch;
     border-radius: 100px;
-border: 3px solid  #478BF9;
+
 background: rgba(255, 255, 255, 0.12);
 /* Bg Blur 20% */
 backdrop-filter: blur(10px);
@@ -207,9 +207,81 @@ line-height: 16px; /* 114.286% */
 }
 .scrollbar{
     width: 8px;
-    height: 100px;
+    height: 403px;
     position: absolute;
     background-color: red;
-    right: 10px;
-    top: 100px;
+    right: 8px;
+    top: 96px;
+    border-radius: 10px;
+background:  rgba(255, 255, 255, 0.12);
+}
+.thumb{
+    width: 8px;
+    height: 104px;
+    border-radius: 10px;
+    background:  #478BF9;
+}
+
+.scrollable-container {
+    height: 595px;
+    align-self: stretch;
+    box-sizing: border-box;
+    border-radius: 100px;
+    
+    background: rgba(255, 255, 255, 0.12);
+   
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #478BF9;
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+
+.blog__container {
+    height: 595px;
+    align-self: stretch;
+    border-radius: 100px;
+ 
+    background: rgba(255, 255, 255, 0.12);
+   
+    width: 100%;
+    overflow-y: auto; /* Используйте overflow-y: auto, чтобы включить вертикальный скроллбар */
+}
+
+/* Стили для скроллбара (включая префиксы для Chrome) */
+.blog__container::-webkit-scrollbar {
+    width: 8px; /* Ширина скроллбара */
+}
+
+.blog__container::-webkit-scrollbar-thumb {
+    background-color: #478BF9; /* Цвет ползунка */
+    border-radius: 10px; /* Закругленные углы ползунка */
+}
+
+.blog__container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.12); /* Цвет трека скроллбара */
+    border-radius: 10px; /* Закругленные углы трека */
+}
+.blog__container::-webkit-scrollbar-thumb {
+    background-color: #478BF9; /* Цвет ползунка */
+    border-radius: 10px; /* Закругленные углы ползунка */
+    height: 60px; /* Высота ползунка */
+    margin-right: 10px;
+}
+
+.blog__container{
+    border: 3px solid #478BF9 ;
+    box-sizing: border-box;
 }

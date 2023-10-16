@@ -1,23 +1,23 @@
-const columns = document.querySelectorAll('.chips__column');
+// Получите контейнер скроллбара
+const blogContainer = document.querySelector('.blog__container');
 
-columns.forEach((column) => {
-    const chips = column.querySelectorAll('.chip');
+// Добавьте слушателя события прокрутки для контейнера
+blogContainer.addEventListener('scroll', updateThumb);
 
-    // Функция, которая будет вызвана при завершении анимации
-    function onAnimationEnd() {
-        // Уберем обработчик, чтобы избежать его многократного вызова
-        this.removeEventListener('animationiteration', onAnimationEnd);
-        // Получим первую картинку и переместим ее вниз
-        const firstChip = chips[0];
-        firstChip.style.transform = 'translateY(0%)';
-        // Перемещаем первую картинку в конец списка
-        column.appendChild(firstChip);
-    }
+// Обновление ползунка скроллбара
+function updateThumb() {
+    const scrollContainer = blogContainer;
+    const scrollbarThumb = scrollContainer.querySelector('.blog__container::-webkit-scrollbar-thumb');
+    
+    // Рассчитайте положение ползунка в зависимости от прокрутки
+    const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+    const scrollPercentage = (scrollContainer.scrollTop / maxScroll) * 100;
+    
+    // Обновите стиль ползунка
+    scrollbarThumb.style.height = `${scrollPercentage}%`;
+}
 
-    chips.forEach((chip, index) => {
-        // Устанавливаем начальное значение анимации
-        chip.style.animation = `moveChips 4s linear ${index * 0.5}s infinite`;
-        // Добавляем обработчик события завершения анимации
-        chip.addEventListener('animationiteration', onAnimationEnd);
-    });
-});
+// Вызовите функцию для установки начального стиля ползунка
+updateThumb();
+
+
