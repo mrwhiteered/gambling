@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;
     height: 100vh;
     background: var(--main-navy-blue-110-a-1-d, #110A1D);
-    overflow: hidden;
+    max-height: 1265px;
 }
 .chips__background{
     display: flex;
@@ -24,6 +24,7 @@ body {
     height: 99px;
     position: absolute;
     animation: moveChips 8s linear infinite;
+    
 }
 .chip2 {
     width: 99px;
@@ -192,26 +193,60 @@ body {
 @keyframes moveChips {
     0% {
         top: 100%; /* Начинаем снизу */
+        opacity: 0.1;
+    }
+    20%{
+        opacity: .1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .1;
     }
     100% {
         top: -40%; /* Заканчиваем вверху */
+        opacity: 0.1;
     }
 }
+
 
 @keyframes moveChipsBottom {
     0% {
         top: -40%; /* Начинаем снизу */
+        opacity: 0.1;
+    }
+    20%{
+        opacity: .1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .1;
     }
     100% {
         top: 100%; /* Заканчиваем вверху */
+        opacity: 0.1;
     }
 }
 
 @keyframes moveChips2 {
     0% {
         top: 100%; /* Начинаем снизу */
+        opacity: 0.1;
+    }
+    20%{
+        opacity: .1;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .1;
     }
     100% {
         top: -40%; /* Заканчиваем вверху */
+        opacity: 0.1;
     }
 }

@@ -1,0 +1,63 @@
+.footer{
+   
+    width: 100%;
+    border-radius: 64px 64px 0px 0px;
+border-top: 4px solid  #478BF9;
+border-right: 4px solid  #478BF9;
+border-left: 4px solid  #478BF9;
+background:  #1E1231;
+align-items: flex-end;
+padding: 40px 140px 24px 140px;
+box-sizing: border-box;
+}
+.footer__container{
+    display: flex;
+    max-width: 1640px;
+    justify-content: space-between;
+   
+}
+.footer__nav{
+    align-self:flex-end ;
+}
+.nav__list_footer{
+    display: flex;
+    align-items: center;
+   
+}
+.nav__link_footer{
+    color:  #FFF;
+    text-align: center;
+    /* Buttons/Btn. Sec */
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /
+}
+.social__list{
+    display: flex;
+}
+.footer__social_title{
+    color:  #FFF;
+text-align: right;
+/* Buttons/Btn. Sec */
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+margin-bottom: 14px;
+}
+.social__item{
+    margin-right: 8px;
+}
+.social__item:last-child{
+    margin-right: 0;
+}
+.social__link:hover svg path{
+  
+     fill: url(#b); /* Новый цвет для первого <path> элемента при наведении */
+}
+.social__link:hover svg .path2{
+    fill: #1E1231; /* Новый цвет для первого <path> элемента при наведении */
+}

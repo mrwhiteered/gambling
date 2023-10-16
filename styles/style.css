@@ -20,7 +20,7 @@ line-height: 20px; /* 125% */
 }
 .header{
 
-background: #110A1D;
+
 padding-top: 16px;
 z-index: 999;
 position: relative;
@@ -149,8 +149,7 @@ text-transform: uppercase;
     border-radius: 100px;
 
 background: rgba(255, 255, 255, 0.12);
-/* Bg Blur 20% */
-backdrop-filter: blur(10px);
+
 width: 100%;
 overflow-y: hidden;
 
@@ -184,6 +183,12 @@ background: #478BF9;
 margin: 24px 24px 16px 24px;
 box-sizing: border-box;
 height: 146px;
+
+}
+.blog__item:not(:first-child){
+    background: #1E1231;
+
+
 
 }
 .blog__text{
@@ -284,4 +289,35 @@ background:  rgba(255, 255, 255, 0.12);
 .blog__container{
     border: 3px solid #478BF9 ;
     box-sizing: border-box;
+}
+
+.container{
+    overflow-y: hidden;
+   
+}
+
+.gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:3;
+    width: 226.458px;
+    height: 1302.469px;
+    transform: rotate(-54.311deg);
+    background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
+
+opacity: 0.55;
+filter: blur(150px);
+}
+.gradient2{
+    position: absolute;
+    right: -200px;
+    bottom: -200px;
+    z-index: 3;
+    border-radius: 574px;
+
+width: 574px;
+height: 574px;
+background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+filter: blur(325px);
 }
