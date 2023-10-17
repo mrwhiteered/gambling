@@ -331,3 +331,39 @@ body {
         opacity: 0.1;
     }
 }
+.chip__longN{
+    display: none;
+}
+
+@media  (max-width:460px) {
+.chips__wrapp{
+    transform: rotate(90deg);
+    height: 280px;
+    
+}
+.chip__image{
+    transform: rotate(-90deg);
+}
+.chip__long{
+    transform: rotate(180deg);
+    display: none;
+}
+.chip__image{
+    width: 49px;
+    height: 49px;
+}
+.banner{
+    margin-right: 60px;
+    height: 450px;
+}
+.chip__longN{
+    display: block;
+  width: 108px;
+  height: 49px;
+  transform: rotate(90deg) translateY(30px) translateX(35px);
+   
+}
+
+
+
+}

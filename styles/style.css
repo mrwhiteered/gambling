@@ -419,3 +419,122 @@
 .nav__link{
     transition: color .4s;
 }
+.burger{
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    margin: 4px;
+    display: none;
+}
+.burger__line{
+    width: 26px;
+    height: 3px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+.lastLine{
+    margin-bottom: 0;
+}
+@media  (max-width:460px) {
+    .nav{
+        display: none;
+    }
+    .button__header{
+        display: none;
+    }
+    .langBtn{
+        display: block;
+        margin-left: auto;
+        margin-right: 4px;
+    }
+    .language{
+        display: none;
+    }
+    .container__header{
+       display: flex;
+        padding: 14px;
+        box-sizing: border-box;
+       justify-content: right;
+        
+    }
+    .header{
+        padding: 10px;
+    }
+    .buttons__list{
+        display: block;
+    }
+    .button__header{
+        width: 36px;
+        height: 36px;
+        padding: 0;
+    }
+    .lang__img{
+        width: 20px;
+        height: 20px;
+    }
+    .left__header{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .title__main{
+        color: #FFF;
+text-align: center;
+/* Mobile/H_1 */
+font-family: Lexend;
+font-size: 46px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; 
+    }
+    .gambling{
+        color: #478BF9;
+/* Mobile/H_1 */
+font-family: Lexend;
+font-size: 46px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px;
+    }
+    .left{
+        margin-top: 70px;
+        max-width: 320px;
+        width: auto;
+    }
+    .title__sub{
+        margin-top: 12px;
+        margin-bottom: 24px;
+        color:  rgba(255, 255, 255, 0.60);
+text-align: center;
+/* Mobile/Text_1 */
+font-family: Lexend;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 130% */
+    }
+    .partner__btn{
+        padding: 15px 20px;
+        margin: 0 auto;
+        display: block;
+        color:  #FFF;
+text-align: center;
+/* Mobile/CTA */
+font-family: Lexend;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+    }
+    .container{
+        
+        width: auto;
+        flex-direction: column;
+    }
+   
+}
