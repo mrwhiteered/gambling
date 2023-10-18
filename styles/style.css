@@ -112,6 +112,9 @@
     justify-content: center;
 }
 
+
+
+
 .language {
     margin-left: 8px;
 }
@@ -396,12 +399,17 @@
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.12);
 }
-
+.desktopSvg{
+    padding: 5px;
+}
 .scroollThumb {
     width: 8px;
     height: 104px;
     border-radius: 10px;
     background: #478BF9;
+}
+.phoneSvg{
+    display: none;
 }
 
 .blog__container::-webkit-scrollbar {
@@ -478,12 +486,20 @@
         padding: 15px 40px;
         font-size: 18px;
     }
+    .lang__img{
+        display: none;
+    }
+    .phoneSvg{
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:1025px) {
     .nav {
         display: none;
     }
+   
 
     .button__header {
         display: none;
