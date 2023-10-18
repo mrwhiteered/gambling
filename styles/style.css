@@ -228,6 +228,8 @@
 
 .container {
     overflow-y: hidden;
+    margin-left: 10px;
+    right: 10px;
 
 }
 
@@ -358,7 +360,7 @@
 }
 
 .blog__item:not(:first-child) {
-    border-radius: 196px;
+   
     background: #1E1231;
 
 }
@@ -429,9 +431,56 @@
 .blog__container::-webkit-scrollbar-track {
     background: transparent;
 }
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left{
+    z-index: 99;
+}
+@media (max-width:1400px) {
+    .blog__item{
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+    .blog__container{
+        border-radius: 85px;
+    }
+    .title__main{
+        font-size: 75px;
+    }
+    .gambling{
+        font-size: 75px;
+    }
+    .title__blog{
+        margin-top: 0;
+    }
+    .scroolBar{
+        top: 160px;
+    }
+}
 
+@media (max-width:1200px) {
+    .blog__text{
+        font-size: 18px;
+    }
+    .title__main{
+        font-size: 55px;
+    }
+    .gambling{
+        font-size: 55px;
+    }
+    .title__sub{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .partner__btn{
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
 
-@media (max-width:560px) {
+@media (max-width:1025px) {
     .nav {
         display: none;
     }
