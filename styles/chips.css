@@ -62,201 +62,152 @@ body {
 
 #chip1 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 0s;
-    /* Начнем первую фишку сразу */
 }
 
 #chip2 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 1.65s;
-    /* Задержка для второй фишки */
 }
 
 #chip3 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 2.45s;
-    /* Задержка для третьей фишки */
 }
 
 #chip4 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 3.25s;
-    /* Задержка для третьей фишки */
 }
 
 #chip5 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 4.05s;
-    /* Начнем первую фишку сразу */
 }
 
 #chip6 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 5.70s;
-    /* Задержка для второй фишки */
 }
 
 #chip7 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 6.45s;
-    /* Задержка для третьей фишки */
 }
 
 #chip8 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 7.25s;
-    /* Задержка для третьей фишки */
 }
 
 #chip16 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 0s;
-    /* Начнем первую фишку сразу */
 }
 
 #chip15 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: .8s;
-    /* Задержка для второй фишки */
 }
 
 #chip14 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 1.6s;
-    /* Задержка для третьей фишки */
 }
 
 #chip13 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 2.4s;
-    /* Задержка для третьей фишки */
 }
 
 #chip12 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 4s;
-    /* Начнем первую фишку сразу */
 }
 
 #chip11 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 4.8s;
-    /* Задержка для второй фишки */
 }
 
 #chip10 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 5.6s;
-    /* Задержка для третьей фишки */
 }
 
 #chip9 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 6.4s;
-    /* Задержка для третьей фишки */
 }
 
 
 #c1 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 0s;
-    /* Начнем первую фишку сразу */
 }
 
 #c2 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 1.65s;
-    /* Задержка для второй фишки */
 }
 
 #c3 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 2.45s;
-    /* Задержка для третьей фишки */
 }
 
 #c4 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 3.25s;
-    /* Задержка для третьей фишки */
 }
 
 #c5 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 4.05s;
-    /* Начнем первую фишку сразу */
 }
 
 #c6 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 5.70s;
-    /* Задержка для второй фишки */
 }
 
 #c7 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 6.45s;
-    /* Задержка для третьей фишки */
 }
 
 #c8 {
     top: 100%;
-    /* Начинаем снизу */
     left: 0;
     animation-delay: 7.25s;
-    /* Задержка для третьей фишки */
 }
 
 @keyframes moveChips {
     0% {
         top: 100%;
-        /* Начинаем снизу */
         opacity: 0.1;
     }
 
@@ -274,7 +225,6 @@ body {
 
     100% {
         top: -40%;
-        /* Заканчиваем вверху */
         opacity: 0.1;
     }
 }
@@ -283,7 +233,6 @@ body {
 @keyframes moveChipsBottom {
     0% {
         top: -40%;
-        /* Начинаем снизу */
         opacity: 0.1;
     }
 
@@ -301,7 +250,6 @@ body {
 
     100% {
         top: 100%;
-        /* Заканчиваем вверху */
         opacity: 0.1;
     }
 }
@@ -309,7 +257,6 @@ body {
 @keyframes moveChips2 {
     0% {
         top: 100%;
-        /* Начинаем снизу */
         opacity: 0.1;
     }
 
@@ -327,41 +274,46 @@ body {
 
     100% {
         top: -40%;
-        /* Заканчиваем вверху */
         opacity: 0.1;
     }
 }
-.chip__longN{
+
+.chip__longN {
     display: none;
 }
 
-@media  (max-width:460px) {
-.chips__wrapp{
-    transform: rotate(90deg);
-    height: 280px;
-    
-}
-.chip__image{
-    transform: rotate(-90deg);
-}
-.chip__long{
-    transform: rotate(180deg);
-    display: none;
-}
-.chip__image{
-    width: 49px;
-    height: 49px;
-}
-.banner{
-    margin-right: 60px;
-    height: 450px;
-}
-.chip__longN{
-    display: block;
-  width: 108px;
-  height: 49px;
-  transform: rotate(90deg) translateY(30px) translateX(35px);
-}
+@media (max-width:560px) {
+    .chips__wrapp {
+        transform: rotate(90deg);
+        height: 280px;
+
+    }
+
+    .chip__image {
+        transform: rotate(-90deg);
+    }
+
+    .chip__long {
+        transform: rotate(180deg);
+        display: none;
+    }
+
+    .chip__image {
+        width: 49px;
+        height: 49px;
+    }
+
+    .banner {
+        margin-right: 60px;
+        height: 450px;
+    }
+
+    .chip__longN {
+        display: block;
+        width: 108px;
+        height: 49px;
+        transform: rotate(90deg) translateY(30px) translateX(35px);
+    }
 
 
 
