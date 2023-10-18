@@ -182,23 +182,6 @@
     text-transform: uppercase;
 }
 
-.blog__container {
-    height: 595px;
-    align-self: stretch;
-    border-radius: 100px;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    width: 100%;
-    overflow-y: hidden;
-
-}
-
-.right {
-    width: 531px;
-    align-self: flex-start;
-}
-
 .container {
     display: flex;
     align-items: center;
@@ -258,99 +241,6 @@
     line-height: 16px;
     /* 114.286% */
 }
-
-.scrollbar {
-    width: 8px;
-    height: 403px;
-    position: absolute;
-    background-color: red;
-    right: 8px;
-    top: 96px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.thumb {
-    width: 8px;
-    height: 104px;
-    border-radius: 10px;
-    background: #478BF9;
-}
-
-.scrollable-container {
-    height: 595px;
-    align-self: stretch;
-    box-sizing: border-box;
-    border-radius: 100px;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.scrollable-container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.scrollable-container::-webkit-scrollbar-thumb {
-    background-color: #478BF9;
-    border-radius: 10px;
-}
-
-.scrollable-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-}
-
-.blog__container {
-    height: 595px;
-    align-self: stretch;
-    border-radius: 100px;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    width: 100%;
-    overflow-y: auto;
-    /* Используйте overflow-y: auto, чтобы включить вертикальный скроллбар */
-}
-
-/* Стили для скроллбара (включая префиксы для Chrome) */
-.blog__container::-webkit-scrollbar {
-    width: 8px;
-    /* Ширина скроллбара */
-}
-
-.blog__container::-webkit-scrollbar-thumb {
-    background-color: #478BF9;
-    /* Цвет ползунка */
-    border-radius: 10px;
-    /* Закругленные углы ползунка */
-}
-
-.blog__container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.12);
-    /* Цвет трека скроллбара */
-    border-radius: 10px;
-    /* Закругленные углы трека */
-}
-
-.blog__container::-webkit-scrollbar-thumb {
-    background-color: #478BF9;
-    /* Цвет ползунка */
-    border-radius: 10px;
-    /* Закругленные углы ползунка */
-    height: 60px;
-    /* Высота ползунка */
-    margin-right: 10px;
-}
-
-.blog__container {
-    border: 3px solid #478BF9;
-    box-sizing: border-box;
-}
-
 .container {
     overflow-y: hidden;
 
@@ -441,6 +331,138 @@
 .phone{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.right{
+    max-width: 532px;
+    position: relative;
+}
+.blog__container{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    max-width: 531px;
+    box-sizing: border-box;
+    border-radius: 108px;
+    border: 3px solid  #478BF9;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 24px 40px 0 24px;
+
+    max-height: 595px;
+    overflow-y: hidden;
+    overflow: auto;
+}
+.blog__item{
+ width: 100%;
+ box-sizing: border-box;
+ border-radius: 196px;
+background:  #478BF9;
+padding: 16px 64px;
+margin-bottom: 16px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+.blog__item:not(:first-child){
+    border-radius: 196px;
+background:  #1E1231;
+
+}
+.blog__text{
+    color:  #FFF;
+font-family: Lexend;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+margin: 0;
+margin-bottom: 14px;
+}
+
+.blog__time{
+    color:  rgba(255, 255, 255, 0.60);
+font-feature-settings: 'liga' off;
+/* Caption/Cap. Sec_1 */
+font-family: Futura PT;
+font-size: 14px;
+font-style: normal;
+font-weight: 450;
+line-height: 16px;
+
+}
+.scroolBar{
+    position: absolute;
+    right: 16px;
+    top: 300px;
+    width: 8px;
+height: 403px;
+border-radius: 10px;
+background:  rgba(255, 255, 255, 0.12);
+}
+.scroollThumb{
+    width: 8px;
+    height: 104px;
+    border-radius: 10px;
+background:  #478BF9;
+}
+
+
+/* Скрыть стандартный скролл-бар браузера */
+.blog__container::-webkit-scrollbar {
+    width: 0; /* Ширина скролл-бара в WebKit (Chrome, Safari) */
+}
+
+.blog__container::-webkit-scrollbar-thumb {
+    background: transparent; /* Фон ползунка */
+}
+
+.blog__container::-webkit-scrollbar-track {
+    background: transparent; /* Фон трека */
+}
+
+/* Для Firefox */
+.blog__container {
+    scrollbar-width: none;
+}
+
+.blog__container::-webkit-scrollbar {
+    width: 0;
+}
+
+.blog__container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.blog__container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media  (max-width:460px) {
     .nav{
         display: none;
@@ -577,7 +599,6 @@ line-height: 16px;
         
     }
     .right{
-        width: auto;
         z-index: 9;
         margin: 0 10px 119px ;
     }
@@ -709,5 +730,14 @@ body{
     overflow-x: hidden;
     position: relative;
 }
-
+.scroolBar{
+    height: 291px;
+    width: 4px;
+    top: 123px;
+    right: 6px;
+}
+.scroollThumb{
+    height: 77px;
+    width: 4px;
+}
 }
