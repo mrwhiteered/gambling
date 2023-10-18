@@ -15,7 +15,7 @@
     <title>Анимированные фишки</title>
 </head>
 
-<body>
+<body class="overflow">
     <header class="header">
         <div class="container__header">
             <div class="left__header"></div>
@@ -70,12 +70,47 @@
 
                 </li>
             </ul>
-            <button class="burger">
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
+            <button id="burgerBtn" class="burger">
+                <div class="burger__line first"></div>
+                <div class="burger__line mid"></div>
                 <div class="burger__line lastLine"></div>
             </button>
+            
         </div>
+        <nav id="navPhone" class="phone">
+            <ul class="nav__list_phone">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Brands</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Commissions</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">News</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contact us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Careers</a>
+                </li>
+            </ul>
+            <div class="container__btn_phone">
+            <button type="button" class="phoneBtn">
+                <a href="#" class="btnLink">
+                    <span class="nav__btn_phone ">LOG IN</span>
+                </a>
+            </button><br>
+            <button type="button" class="phoneBtn">
+                <a href="#" class="btnLink">
+                    <span class="nav__btn_phone ">SIGN UP</span>
+                </a>
+            </button>
+        </div>
+        </nav>
     </header>
 
     <main class="main">
@@ -107,6 +142,7 @@
                     </div>
                     <div class="chip" id="chip5">
                         <img src="images/chip2.png" class="chip__image chip__long" alt="" srcset="">
+                        <img src="images/ch1.png" class="chip__image chip__longN" alt="" srcset="">
                     </div>
                     <div class="chip" id="chip6">
                         <img src="images/chip4.png" class="chip__image" alt="" srcset="">
@@ -130,6 +166,7 @@
                     </div>
                     <div class="chipBottom" id="chip12">
                         <img src="images/c2c4.png" class="chip__image chip__long" alt="" srcset="">
+                        <img src="images/ch2.png" class="chip__image chip__longN" alt="" srcset="">
                     </div>
                     <div class="chipBottom" id="chip13">
                         <img src="images/c2c1.png" class="chip__image" alt="" srcset="">
@@ -142,11 +179,13 @@
                     </div>
                     <div class="chipBottom" id="chip16">
                         <img src="images/c2c4.png" class="chip__image chip__long" alt="" srcset="">
+                        <img src="images/ch2.png" class="chip__image chip__longN" alt="" srcset="">
                     </div>
                 </div>
                 <div class="banner">
                     <div class="chip2" id="c1">
                         <img src="images/cc.png" class="chip__image chip__long" alt="" srcset="">
+                        <img src="images/ch3.png" class="chip__image chip__longN" alt="" srcset="">
                     </div>
                     <div class="chip2" id="c2">
                         <img src="images/c3c2.png" class="chip__image" alt="" srcset="">
@@ -159,6 +198,7 @@
                     </div>
                     <div class="chip2" id="c5">
                         <img src="images/cc.png" class="chip__image chip__long" alt="" srcset="">
+                        <img src="images/ch3.png" class="chip__image chip__longN" alt="" srcset="">
                     </div>
                     <div class="chip2" id="c6">
                         <img src="images/c3c2.png" class="chip__image" alt="" srcset="">
@@ -173,7 +213,7 @@
             </div>
             <div class="right">
                 <h2 class="title title__blog">Blog</h2>
-                <div class="scrollable-container">
+                
                     <ul class="blog__container">
 
                         <li class="blog__item">
@@ -213,7 +253,7 @@
                         </li>
                     </ul>
 
-                </div>
+               
             </div>
         </div>
     </main>
@@ -221,7 +261,7 @@
         <div class="footer__container">
             <div class="footer__nav">
                 <ul class="nav__list_footer">
-                    <li class="nav__item_footer">
+                    <li class=" nav__item_footer nav__item">
                         <a href="#" class="nav__link_footer">Terms & Conditions</a>
                     </li>
                     <li class="nav__item">
@@ -413,6 +453,7 @@
         </div>
     </footer>
     <script src="js/changeLanguage.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -73,3 +73,51 @@
     fill: #1E1231;
     /* Новый цвет для первого <path> элемента при наведении */
 }
+
+@media  (max-width:460px) {
+    .footer{
+        padding: 20px;
+    }
+    .nav__link_footer{
+        text-align: left;
+font-family: Lexend;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+    }
+    .nav__list_footer .nav__item{
+        text-align: left;
+font-family: Lexend;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+padding: 0;
+border: none;
+background: none;
+    }
+    .nav__item_footer:first-child .nav__link_footer{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .nav__list_footer{
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__nav{
+       align-self: flex-start;
+    }
+    .footer__social_title{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .social__link svg{
+        width: 27px;
+        height: 27px;
+    }
+    
+}
