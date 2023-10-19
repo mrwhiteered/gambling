@@ -231,8 +231,8 @@
 
 .container {
     overflow-y: hidden;
-    margin-left: 10px;
-    right: 10px;
+   
+ 
 
 }
 
@@ -443,8 +443,7 @@
     background: transparent;
 }
 .container{
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
 .left{
     z-index: 99;
@@ -811,6 +810,7 @@
 
     body {
         overflow-x: hidden;
+        padding: 0 10px;
     }
 
     .container {
@@ -834,3 +834,4 @@
         width: 4px;
     }
 }
+

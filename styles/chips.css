@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     overflow-x: hidden;
     height: 100vh;
     background: var(--main-navy-blue-110-a-1-d, #110A1D);
@@ -318,3 +318,4 @@ body {
 
 
 }
+
