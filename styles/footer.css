@@ -61,7 +61,7 @@
     margin-right: 0;
 }
 
-.social__link:hover svg path {
+.social__link:hover  path {
 
     fill: #9DADF2;
 }
