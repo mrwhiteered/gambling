@@ -314,11 +314,14 @@
 .burger__line {
     width: 26px;
     height: 3px;
+    
     margin-bottom: 5px;
     border-radius: 3px;
     background-color: white;
 }
-
+.button_con{
+    margin: auto;
+}
 .lastLine {
     margin-bottom: 0;
 }
@@ -557,7 +560,10 @@
     }
 
     .burger {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
     }
 
     .title__main {
