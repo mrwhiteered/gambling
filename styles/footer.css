@@ -63,7 +63,7 @@
 
 .social__link:hover svg path {
 
-    fill: url(#b);
+    fill: #9DADF2;
 }
 
 .social__link:hover svg .path2 {
